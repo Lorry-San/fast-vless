@@ -5,7 +5,7 @@
 > [!Note]
 > 中文翻译并非100%准确，因为主要基于Claude-sonnet-4。最终结果可能存在一些问题。如果您发现任何问题或认为存在错误，请提交issues以帮助改进fast-vless。
 
-> ·特别感谢 **Zedware Network** 和 **Zedware** 提供的大力支持！  
+> ·特别感谢 **JIACDN US** 和 **jia42** 提供的大力支持！  
 > 
 > ·特别感谢 **[拼好鸽](https://gelxc.cloud)** 提供的大力支持！
 
