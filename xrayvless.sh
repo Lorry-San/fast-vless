@@ -46,9 +46,9 @@ check_and_install_xray() {
   else
     green "❗检测到 Xray 未安装，正在安装..."
 	if [ "$OS" = "alpine" ]; then
-		bash <(curl -L https://lax.xx.kg/https://github.com/Lorry-San/fast-vless/raw/refs/heads/main/xrayinstall-alpine.sh)
+		bash <(curl -L https://gh.85613540.xyz/https://github.com/Lorry-San/fast-vless/raw/refs/heads/main/xrayinstall-alpine.sh)
 	else
-		bash <(curl -L https://lax.xx.kg/https://github.com/Lorry-San/fast-vless/raw/refs/heads/main/xrayinstall.sh)
+		bash <(curl -L https://gh.85613540.xyz/https://github.com/Lorry-San/fast-vless/raw/refs/heads/main/xrayinstall.sh)
 	fi
     
     XRAY_BIN=$(command -v xray || echo "/usr/local/bin/xray")
