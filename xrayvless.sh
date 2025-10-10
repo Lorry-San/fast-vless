@@ -92,7 +92,7 @@ install_trojan_reality() {
     "port": $PORT,
     "protocol": "trojan",
     "settings": {
-      "clients": [{ "password": "$PASSWORD", "email": "$REMARK" , "flow": "xtls-rprx-vision"}]
+      "clients": [{ "password": "$PASSWORD", "email": "$REMARK"}]
     },
     "streamSettings": {
       "network": "tcp",
@@ -120,7 +120,7 @@ EOF
       systemctl enable xray
   fi
   IP=$(curl -s ipv4.ip.sb || curl -s ifconfig.me)
-  LINK="trojan://$PASSWORD@$IP:$PORT?security=reality&flow=xtls-rprx-vision&sni=$SNI&pbk=$PUB_KEY&sid=$SHORT_ID&type=tcp&headerType=none#$REMARK"
+  LINK="trojan://$PASSWORD@$IP:$PORT?security=reality&sni=$SNI&pbk=$PUB_KEY&sid=$SHORT_ID&type=tcp&headerType=none#$REMARK"
   green "✅ Trojan Reality 节点链接如下："
   echo "$LINK"
   read -rp "按任意键返回菜单..."
@@ -133,7 +133,7 @@ while true; do
   green "AD: 大量优秀解锁 & 优化线路KVM: jia cloud jiavps.com"
   green "======= VLESS Reality 一键脚本V6.1正式版 by Lorry-San（💩山Pro Max） ======="
   echo "1) 安装并配置 VLESS Reality Vision节点"  
-  echo "2）生成Trojan Reality Vision节点"
+  echo "2）生成Trojan Reality节点"
   echo "3) 生成 VLESS 中转链接"
   echo "4) 开启 BBR 加速"
   echo "5) 检查 IP 纯净度 & 流媒体解锁"
