@@ -4,13 +4,13 @@
 # https://wiki.linuxfoundation.org/lsb/fhs
 
 # The URL of the script project is:
-# https://lax.xx.kg/https://github.com/XTLS/Xray-install
+# https://gh.85613540.xyz/https://github.com/XTLS/Xray-install
 
 # The URL of the script is:
-# https://lax.xx.kg/https://github.com/XTLS/Xray-install/raw/main/install-release.sh
+# https://gh.85613540.xyz/https://github.com/XTLS/Xray-install/raw/main/install-release.sh
 
 # If the script executes incorrectly, go to:
-# https://lax.xx.kg/https://github.com/XTLS/Xray-install/issues
+# https://gh.85613540.xyz/https://github.com/XTLS/Xray-install/issues
 
 # You can set this variable whatever you want in shell session right before running this script by issuing:
 # export DAT_PATH='/usr/local/share/xray'
@@ -387,7 +387,7 @@ get_latest_version() {
       echo "error: github API rate limit exceeded"
     else
       echo "error: Failed to get the latest release version."
-      echo "Welcome bug report:https://lax.xx.kg/https://github.com/XTLS/Xray-install/issues"
+      echo "Welcome bug report:https://gh.85613540.xyz/https://github.com/XTLS/Xray-install/issues"
     fi
     "rm" "$tmp_file"
     exit 1
@@ -409,7 +409,7 @@ get_latest_version() {
       echo "error: github API rate limit exceeded"
     else
       echo "error: Failed to get the latest release version."
-      echo "Welcome bug report:https://lax.xx.kg/https://github.com/XTLS/Xray-install/issues"
+      echo "Welcome bug report:https://gh.85613540.xyz/https://github.com/XTLS/Xray-install/issues"
     fi
     "rm" "$tmp_file"
     exit 1
@@ -417,7 +417,7 @@ get_latest_version() {
   local i url_zip
   for i in "${!releases_list[@]}"; do
     releases_list["$i"]="v${releases_list[$i]#v}"
-    url_zip="https://lax.xx.kg/https://github.com/XTLS/Xray-core/releases/download/${releases_list[$i]}/Xray-linux-$MACHINE.zip"
+    url_zip="https://gh.85613540.xyz/https://github.com/XTLS/Xray-core/releases/download/${releases_list[$i]}/Xray-linux-$MACHINE.zip"
     if grep -q "$url_zip" "$tmp_file"; then
       PRE_RELEASE_LATEST="${releases_list[$i]}"
       break
@@ -431,7 +431,7 @@ version_gt() {
 }
 
 download_xray() {
-  local DOWNLOAD_LINK="https://lax.xx.kg/https://github.com/XTLS/Xray-core/releases/download/${INSTALL_VERSION}/Xray-linux-${MACHINE}.zip"
+  local DOWNLOAD_LINK="https://gh.85613540.xyz/https://github.com/XTLS/Xray-core/releases/download/${INSTALL_VERSION}/Xray-linux-${MACHINE}.zip"
   echo "Downloading Xray archive: $DOWNLOAD_LINK"
   if curl -f -x "${PROXY}" -R -H 'Cache-Control: no-cache' -o "$ZIP_FILE" "$DOWNLOAD_LINK"; then
     echo "ok."
@@ -537,7 +537,7 @@ install_startup_service_file() {
   cat >/etc/systemd/system/xray.service <<EOF
 [Unit]
 Description=Xray Service
-Documentation=https://lax.xx.kg/https://github.com/xtls
+Documentation=https://gh.85613540.xyz/https://github.com/xtls
 After=network.target nss-lookup.target
 
 [Service]
@@ -557,7 +557,7 @@ EOF
   cat >/etc/systemd/system/xray@.service <<EOF
 [Unit]
 Description=Xray Service
-Documentation=https://lax.xx.kg/https://github.com/xtls
+Documentation=https://gh.85613540.xyz/https://github.com/xtls
 After=network.target nss-lookup.target
 
 [Service]
@@ -696,8 +696,8 @@ install_geodata() {
       exit 1
     fi
   }
-  local download_link_geoip="https://lax.xx.kg/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
-  local download_link_geosite="https://lax.xx.kg/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+  local download_link_geoip="https://gh.85613540.xyz/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+  local download_link_geosite="https://gh.85613540.xyz/https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
   local file_ip='geoip.dat'
   local file_dlc='geosite.dat'
   local file_site='geosite.dat'
