@@ -30,4 +30,4 @@ This project is a lightweight, one-click installation script that supports:
 Run the following command with **root privileges**:
 
 ```bash
-bash <(curl -L https://gh.85613540.xyz/https://raw.githubusercontent.com/Lorry-San/fast-vless/main/xrayvless.sh)
+bash <(curl -L https://raw.githubusercontent.com/Lorry-San/fast-vless/main/xrayvless.sh)
