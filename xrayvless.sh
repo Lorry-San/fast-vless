@@ -153,7 +153,7 @@ while true; do
       PRIV_KEY=$(echo "$KEYS" | awk '/PrivateKey:/ {print $2}')
       PUB_KEY=$(echo "$KEYS" | awk '/Password/ {print $2}')
       SHORT_ID=$(head -c 4 /dev/urandom | xxd -p)
-      SNI="icloud.cdn-apple.com"
+      SNI="music.apple.com"
 
       mkdir -p /usr/local/etc/xray
       cat > /usr/local/etc/xray/config.json <<EOF
